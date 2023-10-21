@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styless.css">
+    <link rel="stylesheet" href="../css/botao.css">
+    <link rel="stylesheet" href="../css/gravacao.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <script src="../js/index.js" defer></script>
+    <title>Geração Nômade</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="header-title">Milionários - Geração Nômade</h1>
+    </header>
+    <main>
+        <button type="button" class="button gradiant" id="cadastrar">Cadastrar Membro</button>
+        <table id="tableStudant" class="siteOut">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Patrimonio</th>
+                    <th>País</th>
+                    <th>CPF</th>
+                    <th>Data de nascimento</th>
+                    <th>Estilo</th>
+                    <th>Opção</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Membro</h2>
+                    <span class="fecharModal" id="fecharModal">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Insira o seu Nome"
+                        required>
+                    <input type="email" id="email" class="modal-field" placeholder="Insira o seu E-mail" required>
+                    <input type="number" id="patrimonio" class="modal-field" placeholder="Insira valor do seu patrimonio" required>
+                    <input type="text" id="pais" class="modal-field" placeholder="Informe o seu país" required>
+                    <input type="text" id="cpf" class="modal-field" placeholder="Informe o seu CPF" required>
+                    <input type="date" id="datNascimento" class="modal-field" placeholder="Informe a sua data de nascimento" required>
+                    <input type="text" id="estilo" class="modal-field" placeholder="Nomade ou fixo" required>
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button red">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>  
+</body>
+
+</html>
